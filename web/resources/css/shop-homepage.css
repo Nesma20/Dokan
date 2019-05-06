@@ -1,0 +1,272 @@
+/*!
+ * Start Bootstrap - Shop Homepage (https://startbootstrap.com/template-overviews/shop-homepage)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-shop-homepage/blob/master/LICENSE)
+ */
+*{
+    box-sizing: border-box;
+    font-family: Trebuchet MS, sans-serif;
+}s
+
+body {
+    padding-top: 56px;
+}
+
+.headerLogo{
+    height: 40px;
+}
+
+.detail-image{
+    width: 20%;
+    height: 20%;
+}
+/* Setting margin for top and bottom */
+.containerSpacing{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.divHeader{
+    margin-bottom: 1.5rem;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.columnTwoThird{
+    flex: 0 0 70%;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.centered{
+    margin: 0 auto;
+}
+
+/* Modal Content/Box */
+.my-modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    width: 100%; /* Could be more or less, depending on screen size */
+    display: inherit;
+}
+
+/* Complete order button at Checkout page*/
+.submit-button{
+    width: 100%;
+    margin: 10px auto;
+}
+
+/* Navbar for header only block */
+.fixed-top-header-only {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+/*Checkout table */
+.table-checkout {
+    width: 100%;
+    margin-top: 15px;
+}
+
+#creditDetails{
+    display: none;
+}
+
+/* Complete order button at add product page*/
+.submit-button-half{
+    width: 50%;
+    margin: 10px auto;
+}
+
+
+.image_product
+{
+    display: flex;   
+}
+
+.mainColor{
+    background-color: #212529;
+}
+
+/* Set a style for all buttons */
+button, .submit-button {
+    background-color: #01395C;
+    color: white;
+    padding: 8px 16px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    text-decoration: none;
+}
+
+button:hover, .submit-button:hover {
+    opacity: 1;
+}
+
+.myProductCardContainer:hover{
+    background-color: #00000009;
+}
+
+.productPriceDiscounted{
+    text-decoration: line-through;
+    margin: 0;
+}
+
+.productName, .productName:hover{
+    color: #222222;
+    text-decoration: none;
+}
+
+.productPriceFinal{
+    color: #01395C;
+    margin: 0;
+}
+
+.headerImages{
+    height: 1.2em;
+}
+
+.headerImagesContainer:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: .2em;
+}
+
+.input-group-field{
+    margin-right: 0 !important;
+    position: relative;
+    z-index: 151;
+    height: 88% !important;
+    background-color: #eaeaea;
+    border: none;
+    width: 12em;
+    border-radius: 99px;
+    padding: .4em !important;
+    padding-left: .85em !important;
+    margin: auto !important;
+    color: #343a40;
+    font-style: italic;
+}
+
+.headerLogo{
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.headerNavBar{
+    height: 3.5em;
+}
+
+/* Full-width input fields */
+.myInput{
+    width: 100%;
+    padding: 15px;
+    margin: .5em;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    margin: .3em auto;
+}
+
+/* Add a background color when the inputs get focus */
+.myInput:focus{
+    background-color: #ddd;
+    outline: none;
+}
+
+
+
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+    position: fixed;
+    bottom: 0;
+    background-color: #fefefe;
+    width: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 1em;
+    background-color: #5cb85c;
+    color: white;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+.productImage{
+    max-height: 240px;
+    margin: 0 auto;
+    padding: .5em;
+    max-width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.productImageContainer{
+    min-height: 240px;
+    min-width: 240px;
+}
